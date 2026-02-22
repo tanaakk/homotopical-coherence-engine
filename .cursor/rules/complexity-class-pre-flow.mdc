@@ -1,0 +1,84 @@
+---
+description: 思考開始前に Complexity Class を分類する必須フロー
+alwaysApply: true
+---
+
+# 思考前 Complexity Class 分類フロー
+
+## 原則
+
+**思考・設計・実装を開始する前に**、対象問題の Complexity Class を分類する。この分類により、投資可能性・リソース戦略・アプローチの選択が決まる。
+
+## 必須フロー
+
+```
+[問題に直面] → [既知の決定不能チェック] → [該当なら即終了]
+                ↓ 該当なし
+         [Complexity Class を分類] → [Investment Feasibility を確認] → [思考・設計を開始]
+```
+
+### 既知の決定不能：即終了（無駄なリソース防止）
+
+以下に該当する場合は **分類のみで即終了**。解決の試みは行わない。
+
+| 問題 | 判定 |
+|------|------|
+| **Halting Problem**（停止性判定） | 即終了 |
+| **Entscheidungsproblem**（一階述語論理の決定手続き） | 即終了 |
+| **Gödel 不完全性**（体系内での無矛盾性証明） | 即終了 |
+
+分類が不明な場合は、**最悪ケース（上位クラス）を仮定**して進める。
+
+---
+
+## Complexity Class 分類表（世界標準定義に準拠）
+
+> **注意**: Definition は計算複雑度理論の標準定義。Startup Use Cases / Investment Feasibility はビジネス判断であり、数学的定義とは別。
+
+| Complexity Class | Definition（標準） | Startup Use Cases | Investment Feasibility |
+|------------------|-------------------|-------------------|------------------------|
+| **Undecidable** (Halting Problem 等) | 有限時間で解を決定するアルゴリズムが**存在しない** | 完全自律 AGI、AI 自己改変 | ❌ Impossible |
+| **EXPSPACE / EXPTIME** | 指数空間/時間で解ける（**決定可能**だが非現実的） | AI 汎用定理証明、完全タンパク質折り畳み | ❌ Cost-prohibitive |
+| **PSPACE-Hard** | PSPACE-complete 以上（多項式空間以上が必要） | — | ❌〜⚠️ リソース依存 |
+| **NP-Hard** | NP-complete 以上。NP に属さない場合もあり | 大規模 AI モデル適応、AI 駆動証明生成 | ⚠️ High risk |
+| **NP-Complete** | NP 内で全 NP 問題が多項式時間還元可能 | AI 物流、サイバーセキュリティ、SaaS 指標 | ✅ ヒューリスティックでスケール可能。10年上限 |
+| **NP** | 解の検証が多項式時間で可能 | — | ✅ |
+| **NP-easy** (FP^NP) | NP オラクルで多項式時間で解ける**関数問題** | 予測分析、レコメンド、TSP 最適化 | ✅ |
+| **P** | 決定性 TM で多項式時間 O(n^k) で解ける | QA、CI/CD | ✅ Highly scalable |
+| **L** (Logarithmic Space) | 対数空間 O(log n) で解ける | — | ✅ Minimal compute |
+| **DLOGTIME** | 対数時間 O(log n) で解ける（ランダムアクセス TM） | 入力長検証、回路一様性 | ✅ |
+
+### 訂正・補足（元表との差異）
+
+| 元表の記載 | 訂正内容 |
+|------------|----------|
+| UNSAT を Undecidable に含めた | **誤り**。UNSAT は **co-NP-complete**（決定可能）。Undecidable は Halting Problem 等のみ |
+| "Unsolvable" で EXPSPACE/EXPTIME/PSPACE-Hard をまとめた | **用語修正**。これらは**決定可能**。正しくは "Intractable"（非現実的リソース） |
+| NP-Easy「P より重い」 | **定義修正**。NP-easy = FP^NP（NP オラクル付き多項式時間）。P と直接比較は不適切 |
+| "N" (Logarithmic Time) | **表記修正**。標準は **DLOGTIME**。NL は対数**空間**（NSPACE(log n)）であり時間ではない |
+
+### 標準包含関係（参考）
+
+```
+DLOGTIME ⊆ L ⊆ NL ⊆ P ⊆ NP ⊆ PH ⊆ PSPACE ⊆ EXPTIME ⊆ EXPSPACE
+         NP-complete ⊆ NP-Hard（NP-Hard は NP 外も含む）
+         Undecidable ∉ 上記（計算可能性の外）
+```
+
+---
+
+## 分類後のアクション
+
+| Feasibility | アクション |
+|-------------|------------|
+| ❌ Impossible / Cost-prohibitive | **最小作用原理**: 分類のみで終了。解決の試みは行わない |
+| ⚠️ High risk | 加速技術・近似・ヒューリスティックの明示的計画を立ててから着手 |
+| ✅ Feasible | 該当クラスに応じたリソース計画で着手。NP-Complete は 10 年上限を意識 |
+
+---
+
+## 実践指針
+
+1. **新規問題・機能・設計の検討時**: 本フローを最初に実行する
+2. **複数サブ問題に分解する場合**: 各サブ問題を個別に分類し、ボトルネックとなるクラスを特定する
+3. **既存 mathematical-resource-parsimony ルールとの連携**: 分類結果に基づき、認識論的倹約・計算的謙虚さ・リソース感応的推論を適用する
