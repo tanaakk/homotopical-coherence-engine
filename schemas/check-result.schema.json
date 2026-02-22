@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CheckResult",
+  "type": "object",
+  "required": ["statement", "ontologyPosition", "topologicalStatement", "verification", "timestamp"],
+  "properties": {
+    "statement": { "type": "string" },
+    "ontologyPosition": {
+      "type": "object",
+      "required": ["level", "description"],
+      "properties": {
+        "level": { "enum": ["L0", "L1", "L2", "L3", "L4"] },
+        "domain": { "type": "string" },
+        "description": { "type": "string" },
+        "source": { "type": "string" }
+      }
+    },
+    "topologicalStatement": {
+      "type": "object",
+      "required": ["formal", "interpretation"],
+      "properties": {
+        "formal": { "type": "string" },
+        "interpretation": { "type": "string" },
+        "homotopyType": { "type": "string" }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "required": ["mode", "status"],
+      "properties": {
+        "mode": { "enum": ["ZFC", "HoTT"] },
+        "status": { "enum": ["verified", "unverified", "undecidable", "error"] },
+        "message": { "type": "string" },
+        "proofAssistant": { "type": "string" }
+      }
+    },
+    "timestamp": { "type": "string", "format": "date-time" }
+  }
+}

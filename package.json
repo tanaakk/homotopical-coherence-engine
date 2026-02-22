@@ -1,0 +1,32 @@
+{
+  "name": "homotopical-coherence-engine",
+  "version": "0.1.0",
+  "description": "High-order logical execution framework to verify the integrity of given thesis",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "hce": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "check": "npm run build && node dist/cli.js",
+    "dev": "tsx watch src/cli.ts"
+  },
+  "keywords": [
+    "homotopy",
+    "type-theory",
+    "ZFC",
+    "ontology",
+    "topology",
+    "verification"
+  ],
+  "license": "AGPL-3.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
