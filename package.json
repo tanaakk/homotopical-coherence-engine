@@ -1,6 +1,6 @@
 {
   "name": "homotopical-coherence-engine",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "High-order logical execution framework to verify the integrity of given thesis",
   "type": "module",
   "main": "dist/index.js",
