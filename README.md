@@ -91,6 +91,7 @@ node dist/cli.js "All entities use UUID v4 as primary key"
 
 ## Documentation
 
+- [5-Layer Meta Framework](docs/META_FRAMEWORK.md) — HCE's position in the GAAS ecosystem (from [Complex Physics Scale](https://github.com/tanaakk/complex-physics-scale/blob/main/00_Meta_Framework.md))
 - [Architecture](docs/ARCHITECTURE.md) — Pipeline and module structure
 - [Technical White Paper](docs/WHITEPAPER.md) — Full vision and capabilities
 

@@ -8,6 +8,12 @@ HCE evaluates whether any given statement, business protocol, or physical model 
 
 ---
 
+## Position in the 5-Layer Meta Framework
+
+HCE occupies **Layer 5 (Singularity Breakthrough Conditions)** in the [5-Layer Meta Framework](META_FRAMEWORK.md). Within GAAS, HCE is the **final gatekeeper** on Earth for which **goods** and **digital twins** GAAS may occupy. However, HCE is a **screening apparatus**—it has **no meaning in isolation**. It functions only as the last stage of the 5-layer chain (Universal Guideline → GAAS Dissipative Constraints → Complex Physics Scale → Law of Scale Verificator → HCE). See [META_FRAMEWORK.md](META_FRAMEWORK.md) for the full structure.
+
+---
+
 ## Core Capabilities
 
 ### 1. Logical Stratification (ZFC & Beyond)
