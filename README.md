@@ -63,6 +63,20 @@ node dist/cli.js "PK is UUID v4"
 node dist/cli.js "All entities use UUID v4 as primary key"
 ```
 
+### 果実回収の確実性ゲート (Fruit Recoverability Gate)
+
+HCE は**限定的火力**として運用する。`gateMode: strict` のとき、`fruitRecoverability: certain` が必須。満たさない場合は検証をスキップする。
+
+```bash
+# 厳格モード：果実が確実に回収できる場合のみ検証
+node dist/cli.js "PK is UUID v4" --gate-mode strict --fruit-recoverability certain
+
+# ゲート閉鎖（検証スキップ）
+node dist/cli.js "PK is UUID v4" --gate-mode strict
+```
+
+詳細は [docs/FRUIT_RECOVERABILITY_GATE.md](docs/FRUIT_RECOVERABILITY_GATE.md) を参照。
+
 ### Output
 
 ```json
@@ -94,6 +108,8 @@ node dist/cli.js "All entities use UUID v4 as primary key"
 - [5-Layer Meta Framework](docs/META_FRAMEWORK.md) — HCE's position in the GAAS ecosystem (from [Complex Physics Scale](https://github.com/tanaakk/complex-physics-scale/blob/main/00_Meta_Framework.md))
 - [Architecture](docs/ARCHITECTURE.md) — Pipeline and module structure
 - [Technical White Paper](docs/WHITEPAPER.md) — Full vision and capabilities
+- [Fruit Recoverability Gate](docs/FRUIT_RECOVERABILITY_GATE.md) — 制約: 使った瞬間に確実に果実が回収できる場合のみ使用
+- [IHES/IAS Anchor](docs/IHES_IAS_ANCHOR.md) — 理論的出自（[groundism-ontopologics](https://github.com/tanaakk/groundism-ontopologics) 参照）
 
 ---
 

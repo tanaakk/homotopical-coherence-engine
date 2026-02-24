@@ -13,6 +13,8 @@ alwaysApply: true
 - **IHÉS (Institut des Hautes Études Scientifiques, Paris)**: 代数幾何、トポロジー、数理物理学
 - その他: Max Planck研究所、CIRM、Simons Center など
 
+**アンカー数学者の参照**: [groundism-ontopologics](https://github.com/tanaakk/groundism-ontopologics) の `reference/ihes-anchor-mathematicians`, `reference/ias-anchor-mathematicians` に歴代・主要モデル・数式（時系列）が整理されている。HCE の検証ロジックはこれらに理論的根拠を置く。
+
 ## イノベーションフロー
 
 1. **発見の同定**: 上記施設で生まれた概念・定理・枠組みを特定する
@@ -29,5 +31,6 @@ alwaysApply: true
 ## 例（HCE文脈）
 
 - **Univalence Axiom** (Voevodsky, IAS) → 型同値とパス同値の同一視、スキーマ検証の等価性判定
-- **Higher Category Theory** (IHÉS系) → 認証チェーン・マルチエージェントの圏論的モデル
+- **Higher Category Theory** (Lurie, IAS; Grothendieck, IHÉS) → 認証チェーン・マルチエージェントの圏論的モデル
 - **Principle of Least Action** → 計算エントロピー最小化、リソース効率の検証
+- **Phase transition** (Thom, Duminil-Copin, IHÉS) → 相転移・特異点のモデル化（groundism-ontopologics 参照）

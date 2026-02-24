@@ -1,0 +1,29 @@
+---
+description: HCE を限定的火力として運用する制約。果実回収の確実性ゲート。
+alwaysApply: true
+---
+
+# HCE 限定的火力制約
+
+## 原則
+
+**HCE は使った瞬間に確実に果実が回収できる場合のみ使用する。** 限定的に用いられるべき火力である。
+
+## 背景（groundism-ontopologics / universal-guideline）
+
+- 系の成長は**相転移**によって実現し、同一性を維持することなく転移する系こそが**ハイパーグロース**と**オペレーティングレバレッジ**の特異点となる
+- **Engine の出力**は常に節約されるべき
+- **law-of-scale-verificator** が相転移を繰り返して全く異質の存在になりうる系（生物）をスクリーニングする
+- **HCE** は発見した系が社会において相対的に深いルート権限を持っているかを最終証明する**限定的火力**
+
+## 実践指針
+
+1. **果実回収の確実性ゲート**: `gateMode: 'strict'` を使用する場合、`fruitRecoverability: 'certain'` を必須とする
+2. **上流通過の証明**: 可能であれば L4 (law-of-scale-verificator) の出力を `lsvOutput` として渡す
+3. **無駄な発火の回避**: 果実が確実に回収できない見込みのときは HCE を呼び出さない
+4. **最小作用原理との連携**: mathematical-resource-parsimony の Principle of Least Action に従い、計算エントロピーを最小化する
+
+## 参照
+
+- `docs/FRUIT_RECOVERABILITY_GATE.md` — ゲートの仕様・哲学
+- `mathematical-resource-parsimony.mdc` — リソース節約の論理

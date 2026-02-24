@@ -7,6 +7,10 @@ For the full vision and capabilities, see [WHITEPAPER.md](WHITEPAPER.md).
 ```
 Statement Input
       │
+      ├──► Fruit Recoverability Gate (gateMode strict 時)
+      │         │ fruitRecoverability !== 'certain' → gate-closed, 終了
+      │         └──► 通過
+      │
       ├──► Ontology Locator ──► ontologyPosition (L0–L4)
       │
       ├──► Topology Mapper ───► topologicalStatement (formal, interpretation)

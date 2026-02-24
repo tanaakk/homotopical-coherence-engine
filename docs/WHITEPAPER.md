@@ -44,6 +44,7 @@ HCE bridges the gap between abstract logic and physical reality:
 - **Logic Engine:** Formal verification via **Lean 4** and **Coq**, integrated with symbolic computation.
 - **Axiomatic Basis:** Homotopy Type Theory (HoTT) utilizing the **Identity Type** to define equivalence as a path.
 - **Data Integration:** Native support for the **TANAAKK Universal Guideline** (JSON-LD/YAML schema).
+- **Theoretical Provenance:** IHES/IAS anchor mathematicians ([groundism-ontopologics](https://github.com/tanaakk/groundism-ontopologics)) — each topological pattern is anchored to Grothendieck, Sullivan, Lurie, Thom, Duminil-Copin, Voevodsky, and others.
 
 ---
 
