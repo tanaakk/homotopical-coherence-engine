@@ -2,6 +2,8 @@
 
 The **Homotopical Coherence Engine (HCE)** は、Universal Guideline と Law of Scale の整合性を検証する高次論理実行フレームワーク。Homotopy Type Theory (HoTT) と Higher Category Theory に基づく。
 
+**8 つのリポジトリが一つの広域系を形成している。** 本リポジトリ（homotopical-coherence-engine）はその一部である。
+
 ---
 
 ## コア機能
