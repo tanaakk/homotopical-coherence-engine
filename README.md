@@ -103,6 +103,27 @@ node dist/cli.js "PK is UUID v4" --gate-mode strict
 
 ---
 
+## 8 リポジトリ構造
+
+Universal Guideline を含む 8 つのリポジトリが一つの構造を持つ。本リポジトリ（homotopical-coherence-engine）はその一部である。
+
+| リポジトリ | リンク |
+|-----------|--------|
+| universal-guideline | [github.com/tanaakk/universal-guideline](https://github.com/tanaakk/universal-guideline) |
+| holographic-sphere-topology | [github.com/tanaakk/holographic-sphere-topology](https://github.com/tanaakk/holographic-sphere-topology) |
+| GAAS-dissipative-constraints | [github.com/tanaakk/GAAS-dissipative-constraints](https://github.com/tanaakk/GAAS-dissipative-constraints) |
+| complex-physics-scale | [github.com/tanaakk/complex-physics-scale](https://github.com/tanaakk/complex-physics-scale) |
+| law-of-scale-verificator | [github.com/tanaakk/law-of-scale-verificator](https://github.com/tanaakk/law-of-scale-verificator) |
+| homotopical-coherence-engine | [github.com/tanaakk/homotopical-coherence-engine](https://github.com/tanaakk/homotopical-coherence-engine) |
+| intangibles-valuation-logic | [github.com/tanaakk/intangibles-valuation-logic](https://github.com/tanaakk/intangibles-valuation-logic) |
+| operating-leverage-identifier | [github.com/tanaakk/operating-leverage-identifier](https://github.com/tanaakk/operating-leverage-identifier) |
+
+## ドキュメント
+
+| ファイル | 内容 |
+|----------|------|
+| [01_IO_Specification.md](01_IO_Specification.md) | I/O Specification の定義と本リポジトリの想定 I/O |
+
 ## Documentation
 
 - [5-Layer Meta Framework](docs/META_FRAMEWORK.md) — HCE's position in the GAAS ecosystem (from [Complex Physics Scale](https://github.com/tanaakk/complex-physics-scale/blob/main/00_Meta_Framework.md))
