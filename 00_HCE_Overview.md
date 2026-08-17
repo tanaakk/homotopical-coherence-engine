@@ -35,3 +35,10 @@ node dist/cli.js "PK is UUID v4"
 ## 詳細
 
 詳細は [README.md](README.md) および [docs/](docs/) を参照。
+
+### 中核ドキュメント
+
+| ファイル | 内容 |
+|----------|------|
+| [06_Universal_Schema_Concept.md](06_Universal_Schema_Concept.md) | ユニバーサルスキーマ・UUIDv4・場と特異点 |
+| [07_Prompt_Intervention_Physics.md](07_Prompt_Intervention_Physics.md) | プロンプト介入物理学（P1–P8） |

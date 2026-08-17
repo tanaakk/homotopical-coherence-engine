@@ -55,6 +55,7 @@
 
 - [holographic-sphere-topology/01_HST_IO_Specification.md](https://github.com/tanaakk/holographic-sphere-topology/blob/main/01_HST_IO_Specification.md) — I/O Specification の一般定義
 - [docs/META_FRAMEWORK.md](docs/META_FRAMEWORK.md) — 5 層フレームワークにおける HCE の位置
+- [07_Prompt_Intervention_Physics.md](07_Prompt_Intervention_Physics.md) — プロンプト介入物理学（P1–P8）
 - [README.md](README.md) — 本リポジトリ概要
 
 ---

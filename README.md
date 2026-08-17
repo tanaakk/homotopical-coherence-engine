@@ -123,6 +123,8 @@ Universal Guideline を含む 8 つのリポジトリが一つの構造を持つ
 | ファイル | 内容 |
 |----------|------|
 | [01_IO_Specification.md](01_IO_Specification.md) | I/O Specification の定義と本リポジトリの想定 I/O |
+| [06_Universal_Schema_Concept.md](06_Universal_Schema_Concept.md) | ユニバーサルスキーマ・UUIDv4・場と特異点 |
+| [07_Prompt_Intervention_Physics.md](07_Prompt_Intervention_Physics.md) | プロンプト介入物理学（P1–P8） |
 
 ## Documentation
 
@@ -131,6 +133,7 @@ Universal Guideline を含む 8 つのリポジトリが一つの構造を持つ
 - [Technical White Paper](docs/WHITEPAPER.md) — Full vision and capabilities
 - [Fruit Recoverability Gate](docs/FRUIT_RECOVERABILITY_GATE.md) — 制約: 使った瞬間に確実に果実が回収できる場合のみ使用
 - [IHES/IAS Anchor](docs/IHES_IAS_ANCHOR.md) — 理論的出自（[groundism-ontopologics](https://github.com/tanaakk/groundism-ontopologics) 参照）
+- [Prompt Intervention Physics](07_Prompt_Intervention_Physics.md) — プロンプトが物質宇宙に介入する 8 原理（P1–P8）
 
 ---
 

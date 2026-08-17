@@ -81,6 +81,7 @@ const result = await check({
 ## 参照
 
 - [5 層メタフレームワーク](META_FRAMEWORK.md) — HCE の位置づけ
+- [07_Prompt_Intervention_Physics.md](../07_Prompt_Intervention_Physics.md) — P5（フィードバックギャップ）・P7（素数性と観測不能性）
 - [mathematical-resource-parsimony](.cursor/rules/mathematical-resource-parsimony.mdc) — 最小作用原理
 - [universal-guideline](https://github.com/tanaakk/universal-guideline) — 階層定義
 - [law-of-scale-verificator](https://github.com/tanaakk/law-of-scale-verificator) — L4 スクリーニング
